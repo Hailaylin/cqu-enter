@@ -1,0 +1,29 @@
+# webhook 接收验证码转发的端口，需要公网ip，或者frp转发一下
+port: 999
+
+# 文档看百度ai的和项目readme.md 
+# https://cloud.baidu.com/doc/OCR/s/1k3h7y3db
+API_KEY: ''
+SECRET_KEY: ''
+
+# 这里写自己的手机号，能收到验证码的
+phone_num: "12312341234"
+    # phone_num = "18057686814" # 这个卡的短信进不了通知滤盒有点奇怪
+
+# 自己的个人信息
+name: 张三
+
+# 身份证号码
+IdNumber: "1111111"
+
+# 入校理由：随便写一个
+into_reason: 做实验
+
+time:
+  # 如果today为ture，则下面入校时间和出校时间设置为从现在开始到当天23:59
+  # 如果today为false，则由下面设定的入校时间和出校时间决定
+  today: false
+  # 入校时间
+  into_time: "2024-03-10 00:00:00"
+  # 出校时间
+  leave_time: "2024-03-10 23:59:00"
